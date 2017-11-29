@@ -11,7 +11,7 @@ const onSignUp = function (event) {
   api.signUp(data)
     .then(ui.signUpSuccess)
     .catch(ui.signUpFailure)
-  // this.reset()
+  this.reset()
   return false
 }
 
@@ -21,7 +21,7 @@ const onSignIn = function (event) {
   api.signIn(data)
     .then(ui.signInSuccess)
     .catch(ui.signInFailure)
-  // this.reset()
+  this.reset()
   return false
 }
 
@@ -31,7 +31,7 @@ const onChange = function (event) {
   api.onChanges(data)
     .then(ui.changePasswordSuccess)
     .catch(ui.changePasswordFailure)
-  // this.reset()
+  this.reset()
   return false
 }
 

@@ -2,7 +2,7 @@
 const store = require('../store')
 
 const signUpSuccess = function (data) {
-  $('#message').text('Signed up succesfully, welcome to the agency. Please Sign In')
+  $('#message').text('Signed up succesfully')
 }
 
 const signUpFailure = function () {
@@ -11,7 +11,7 @@ const signUpFailure = function () {
 
 const signInSuccess = function (data) {
   store.user = data.user
-  $('#message').text('Signed in succesfully, hello 007')
+  $('#message').text('Signed in succesfully')
 }
 
 const signInFailure = function () {
@@ -27,8 +27,7 @@ const changePasswordFailure = function () {
 }
 
 const signOutSuccess = function () {
-  $('#message').text('Goodbye 007, please bring back the car in one piece this time.')
-  $('#message').text('PLAYER STATUS')
+  $('#message').text('Goodbye')
 }
 
 const signOutFailure = function () {

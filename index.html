@@ -57,24 +57,31 @@
           </form>
       <br>
       <br>
-        <form id="new-game">
-        <fieldset>
-            <legend>Start New Game!</legend>
-            <input type="submit" name="submit" value="Start New Game!">
-        </fieldset>
+      <section>
+          <h1>After </h1>
+          <p id="form-message">Hi</p>
+          <form id="create-client">
+            <fieldset>
+              <legend>Create New Client</legend>
+              <input type="text" id="client-first" name="client[first]" placeholder="First Name">
+              <input type="text" id="client-last" name="client[last]" placeholder="Last Name">
+              <input type="text" id="client-email" name="client[email]" placeholder="Email">
+              <input type="submit" name="submit" value="Create">
+            </fieldset>
           </form>
-      <br>
-      <br>
-        <form id="show-games">
-        <fieldset>
-            <legend>Show Games</legend>
-            <input type="submit" name="submit" value="Show Games">
-        </fieldset>
+          <br>
+          <br>
+          <form id="show-client">
+            <fieldset>
+              <legend>Show Client List</legend>
+              <input type="submit" name="submit" value="Show Clients">
+            </fieldset>
           </form>
-              <br>
-              <br>
-              <br>
-      <p id="playerstatus">PLAYER STATUS</p>
+          <br>
+          <br>
+      </section>
+<div id="clientdata"></div>
+
       <br>
       <br>
       <br>
