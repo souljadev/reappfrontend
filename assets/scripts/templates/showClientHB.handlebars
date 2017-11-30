@@ -1,0 +1,13 @@
+{{#each clients as |client|}}
+{{client.first_name}} {{client.last_name}}
+   <ul data-id="{{client.id}}">
+     <li>Email: {{client.email}}</li>
+     {{#if client.name}}
+        <li>{{client.name}}</li>
+     {{else}}
+        <li>No name</li>
+      {{/if}}
+      <li><button class="delete" name="button">Delete</button></li>
+   </ul>
+
+{{/each}}

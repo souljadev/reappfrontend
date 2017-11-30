@@ -34,7 +34,7 @@ const deleteClient = function (data) {
     data
   })
 }
-
+// handlebar function
 const showClients = function (data) {
   data = JSON.stringify(data)
   console.log(data)
