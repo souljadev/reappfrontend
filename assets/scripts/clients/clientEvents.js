@@ -36,6 +36,7 @@ const showClient = function (event) {
 const deleteClient = function (event) {
   const data = getFormFields(this)
   event.preventDefault()
+  console.log("We're about to delete client with id: ", data.client.id)
   clientAPI.deleteClient(data)
     .then(clientUI.deleteSuccess)
     .catch(clientUI.deleteFailure)
@@ -43,15 +44,16 @@ const deleteClient = function (event) {
 
 // ALL WORKING CODE ABOVE
 
+//
+
+//
+
 // HANDLEBAR CODE BELOW
 
 const onGetClients = (event) => {
   event.preventDefault()
   clientAPI.showClients()
     .then(clientUI.getClientsSuccess)
-    .then(function () {
-      $('.delete-client').on('click', deleteClientHB)
-    })
     .catch(clientUI.failure)
 }
 
@@ -67,18 +69,11 @@ const onClearClients = (event) => {
   clientUI.clearClients()
 }
 
-const deleteClientHB = function (event) {
-  event.preventDefault()
-  console.log('event.target is', event.target)
-  const clientId = event.target.getAttribute('data-id')
-  console.log("We're about to delete client with id: ", clientId)
-}
-
 const addHandlers = function () {
   $('#show-client').on('submit', showClient)
   $('#update-client').on('submit', onUpdateClient)
   $('#create-client').on('submit', onCreate)
-  $('#delete-client').on('submit', deleteClient)
+  $('#delete-client1').on('submit', deleteClient)
   $('#getClientsButton').on('click', onGetClients)
   $('#getNamesButton').on('click', onGetNames)
   $('#clearClientsButton').on('click', onClearClients)

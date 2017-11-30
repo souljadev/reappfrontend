@@ -1,12 +1,12 @@
 'use strict'
 const store = require('../store')
-
+const clientAPI = require('./clientAPI')
 const showClientsTemplate = require('../templates/showClientHB.handlebars')
 
 // create Client Success
 const onCreateSuccess = function (data) {
-  store.client = data.client
-  store.client.id = data.client.id
+  // store.client = data.client
+  // store.client.id = data.client.id
   console.log(data.client.id)
   console.log(data.client)
   $('#form-message').text('Created Client')
@@ -33,38 +33,34 @@ const showClientSuccess = function (data) {
 const showClientFailure = function () {
   $('#form-message').text('Not showing up')
 }
-// delete Successful
-const deleteSuccess = function () {
-  $('#form-message').text('delete succesfully')
-}
-// delete fail
-const deleteFailure = function () {
-  $('#form-message').text('Not showing up')
-}
 
 // ALL WORKING CODE ABOVE
 
 // CODE FOR HANDLEBAR - CONFIRM IF WORKING THEN UPDATE MSG
 const getClientsSuccess = (data) => {
-  console.log(data)
   const showClientsHtml = showClientsTemplate({ clients: data.clients })
-
-  // $("button").on("click", function (e) {
-  //   e.preventDefault()
-  //   $(e.target).parent().parent().remove()
-  // })
-  // $("#content").on("click", 'button', function (e) {
-  //   e.preventDefault()
-  //   $(e.target).parent().parent().remove()
-  // })
   $('.content').append(showClientsHtml)
-
-  // $("button").on("click", function (e) {
-  //   e.preventDefault()
-  //   $(e.target).parent().parent().remove()
-  // })
+  // delete client
+  const deleteCurrentClient = function (data) {
+    store.id = $(event.target).data('id')
+    clientAPI.deleteCUClient(data)
+      .then(deleteSuccess)
+      .catch(deleteFailure)
+  }
+  $('.delete').on('click', deleteCurrentClient)
 }
 
+// delete Successful then refresh client list
+const deleteSuccess = function (data) {
+  $('#form-message').text('delete succesfully')
+  // const showClientsHtml = showClientsTemplate({ clients: data.clients })
+  // $('.content').append(showClientsHtml)
+}
+// delete fail
+const deleteFailure = function () {
+  $('#form-message').text('Not showing up')
+}
+// clearClients
 const clearClients = () => {
   $('.content').empty()
 }
