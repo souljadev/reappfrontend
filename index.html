@@ -63,10 +63,32 @@
           <form id="create-client">
             <fieldset>
               <legend>Create New Client</legend>
-              <input type="text" id="client-first" name="client[first]" placeholder="First Name">
-              <input type="text" id="client-last" name="client[last]" placeholder="Last Name">
+              <input type="text" id="client-first" name="client[first_name]" placeholder="First Name">
+              <input type="text" id="client-last" name="client[last_name]" placeholder="Last Name">
               <input type="text" id="client-email" name="client[email]" placeholder="Email">
               <input type="submit" name="submit" value="Create">
+            </fieldset>
+          </form>
+          <br>
+          <br>
+
+          <form id="update-client">
+            <fieldset>
+              <legend>Update Client Information</legend>
+              <input type="text" id="client-id" name="client[id]" placeholder="ID">
+              <input type="text" id="update-client-last" name="client[last_name]" placeholder="Last Name">
+              <input type="text" id="update-client-first" name="client[first_name]" placeholder="First Name">
+              <input type="text" id="update-client-email" name="client[email]" placeholder="Email">
+              <input type="submit" name="submit" value="Update">
+            </fieldset>
+          </form>
+          <br>
+          <br>
+          <form id="delete-client">
+            <fieldset>
+              <legend>Delete Client Information</legend>
+              <input type="text" id="delete-client-email" name="client[id]" placeholder="Delete">
+              <input type="submit" name="submit" value="Delete">
             </fieldset>
           </form>
           <br>

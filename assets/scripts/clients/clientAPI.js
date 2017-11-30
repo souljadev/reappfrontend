@@ -13,6 +13,28 @@ const createClient = function (data) {
   })
 }
 
+const updateClient = function (data) {
+  return $.ajax({
+    url: config.apiOrigin + '/clients/' + data.client.id,
+    method: 'PATCH',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    data
+  })
+}
+
+const deleteClient = function (data) {
+  return $.ajax({
+    url: config.apiOrigin + '/clients/' + data.client.id,
+    method: 'DELETE',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    data
+  })
+}
+
 const showClients = function (data) {
   data = JSON.stringify(data)
   console.log(data)
@@ -29,5 +51,7 @@ const showClients = function (data) {
 
 module.exports = {
   showClients,
-  createClient
+  updateClient,
+  createClient,
+  deleteClient
 }

@@ -4,25 +4,47 @@ const store = require('../store')
 const onCreateSuccess = function (data) {
   store.client = data.client
   store.client.id = data.client.id
+  console.log(data.client.id)
+  console.log(data.client)
   $('#form-message').text('Created Client')
 }
 
 const onCreateFailure = function () {
   $('#form-message').text('Error on sign up')
 }
-const showClientsSuccess = function (data) {
+
+const onUpdateClientSuccess = function (data) {
   console.log(data)
-  $('#form-message').text('show succesfully')
-  $('#form-message').text('Client Data: ' + data.client)
+  $('#form-message').text('Updated Client Succesfully')
 }
 
-const showClientsFailure = function () {
+const onUpdateClientFailure = function () {
+  $('#form-message').text('Error on Update')
+}
+const showClientSuccess = function (data) {
+  console.log(data)
+  $('#form-message').text('show succesfully')
+}
+
+const showClientFailure = function () {
+  $('#form-message').text('Not showing up')
+}
+
+const deleteSuccess = function () {
+  $('#form-message').text('delete succesfully')
+}
+
+const deleteFailure = function () {
   $('#form-message').text('Not showing up')
 }
 
 module.exports = {
   onCreateSuccess,
   onCreateFailure,
-  showClientsSuccess,
-  showClientsFailure
+  onUpdateClientSuccess,
+  onUpdateClientFailure,
+  showClientSuccess,
+  showClientFailure,
+  deleteSuccess,
+  deleteFailure
 }
