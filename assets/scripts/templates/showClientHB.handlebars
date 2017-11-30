@@ -1,10 +1,11 @@
 {{#each clients as |client|}}
 <br>
-Client ID: {{client.id}}
+<!-- Client ID: {{client.id}}
+<br> -->
+
+<h3>Full Name: {{client.first_name}} {{client.last_name}}</h3>
 <br>
-<bold>{{client.first_name}} {{client.last_name}}</bold>
-<br>
-Email: {{client.email}}
+<h4>Pic: <img src="{{client.email}}" width="180" height="250"></h4>
 <br>
 <button class="delete" name="button" data-id="{{client.id}}">Delete</button>
 <br>

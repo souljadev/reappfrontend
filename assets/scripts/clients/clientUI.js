@@ -53,8 +53,6 @@ const getClientsSuccess = (data) => {
 // delete Successful then refresh client list
 const deleteSuccess = function (data) {
   $('#form-message').text('delete succesfully')
-  // const showClientsHtml = showClientsTemplate({ clients: data.clients })
-  // $('.content').append(showClientsHtml)
 }
 // delete fail
 const deleteFailure = function () {

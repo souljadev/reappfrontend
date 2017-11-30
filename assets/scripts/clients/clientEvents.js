@@ -51,6 +51,7 @@ const deleteClient = function (event) {
 // HANDLEBAR CODE BELOW
 
 const onGetClients = (event) => {
+  clientUI.clearClients()
   event.preventDefault()
   clientAPI.showClients()
     .then(clientUI.getClientsSuccess)
