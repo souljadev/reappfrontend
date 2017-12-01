@@ -1,53 +1,77 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
-// $boxcolor0: #ff0; //yellow
-// $boxcolor1: #0f0; //green
-// $boxcolor2: #00b6ff;
-// $boxcolor3: #2700ff;
-// $boxcolor4: #00ffe4;
-// $gray: #00ffe4;
-// $white: #fff;
-// $boxcolor5: #ff6100;
-// $boxcolor6: #45222e;
-// $boxcolor7: #ffc100;
-// $boxcolor8: #c900ff;
-// $font-color: #4e4e4e;
-// $background-color: #040404;
-// $backgroundimg: url('https://ak2.picdn.net/shutterstock/videos/8434522/thumb/1.jpg');
-//
-// body {
-//   background-color: $background-color;
-//   font-size: 18px;
-//   margin: 0 auto;
-//   padding: 0;
-//   width: 800px;
-// 	}
+$boxcolor0: #ff0; //yellow
+$boxcolor1: #0f0; //green
+$boxcolor2: #00b6ff;
+$boxcolor3: #2700ff;
+$boxcolor4: #00ffe4;
+$gray: #00ffe4;
+$white: #fff;
+$black: #000;
+$boxcolor5: #ff6100;
+$boxcolor6: #45222e;
+$boxcolor7: #ffc100;
+$boxcolor8: #c900ff;
+$font-color: #4e4e4e;
+$background-color: #040404;
+
+body {
+  background-color: $background-color;
+  // font-size: 18px;
+  // width: 800px;
+  width: 800px;
+  margin: 20px auto;
+	}
+
+header {
+  background-color: $boxcolor3;
+  align-items: center;
+  }
 
 #container {
-  margin: 20px auto;
-  width: 1000px;
-  }
-
-#footer {
-  clear: both;
-  text-align: center;
-  }
-
-#header {
-  margin: 20px auto;
-  text-align: center;
-  }
+    background-color: $boxcolor8;
+    }
 
 #main-content {
   float: right;
-  width: 640px;
+  width: 600px;
+  background-color: $boxcolor4;
+  clear: right;
+  margin: 5px auto;
+  padding: 5px auto;
   }
 
 #sidebar {
   float: left;
-  width: 320px;
+  width: 200px;
+  background-color: $boxcolor5;
+  margin: 5px auto;
+  padding: 5px auto;
   }
+
+#footer {
+  background-color: $boxcolor1;
+  clear: both;
+  }
+
+.imagez {
+  max-width: 200px;
+}
+
+video {
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  background-color: $black;
+  background-size: cover;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
 
 
 // header {
