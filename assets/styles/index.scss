@@ -1,8 +1,7 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
-$boxcolor0: #ff0; //yellow
-$boxcolor1: #0f0; //green
+$whitetrans: rgba(0, 0, 0, .4);
 $boxcolor2: #00b6ff;
 $boxcolor3: #2700ff;
 $boxcolor4: #00ffe4;
@@ -18,28 +17,26 @@ $background-color: #040404;
 
 body {
   background-color: $background-color;
-  // font-size: 18px;
-  // width: 800px;
-  width: 800px;
+  width: 1000px;
   margin: 20px auto;
+  overflow: hidden;
 	}
 
 header {
-  background-color: $boxcolor3;
   align-items: center;
   }
 
-#container {
-    background-color: $boxcolor8;
-    }
-
 #main-content {
   float: right;
-  width: 600px;
-  background-color: $boxcolor4;
-  clear: right;
+  width: 700px;
+  background-color: $whitetrans;
+  color: white;
   margin: 5px auto;
   padding: 5px auto;
+  }
+
+legend {
+  color: $white;
   }
 
 #sidebar {
@@ -51,12 +48,14 @@ header {
   }
 
 #footer {
-  background-color: $boxcolor1;
+  text-align: center;
   clear: both;
+  color: $white;
   }
 
 .imagez {
   max-width: 200px;
+  opacity: 0.5;
 }
 
 video {
