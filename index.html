@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <!-- <link rel="stylesheet" type="text/css" href="assets/styles/index.scss"/> -->
       <title>Reapp</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,101 +14,112 @@
     </head>
 
 
+<body>
 
-    <body class="container-fluid">
-      <nav>
-        <h1>Reapp</h1>
-        <p id="message">Hi</p>
-        <form id="sign-up">
-          <fieldset>
-            <legend>Please Sign Up</legend>
-            <input type="text" id="sign-up-email" name="credentials[email]" placeholder="Email">
-            <input type="text" id="sign-up-password" name="credentials[password]" placeholder="Password">
-            <input type="text" id="sign-up-password-confirmation" name="credentials[password_confirmation]" placeholder="Password Confirmation">
-            <input type="submit" name="submit" value="Sign up!">
-          </fieldset>
-        </form>
-      <br>
-        <form id="sign-in">
+  <div id="container">
+    <!-- Title -->
+    <div id="header">
+      <h1>Reapp</h1>
+    </div>
+    <!-- Left Navigation Bar - sign-in/out  change pw/client  -->
+    <div id="sidebar">
+        <p id="message">Hello Welcome to Reapp</p>
+          <!-- Sign Up -->
+          <form id="sign-up">
+            <fieldset>
+              <legend>Please Sign Up</legend>
+              <input type="text" id="sign-up-email" name="credentials[email]" placeholder="Email">
+              <input type="text" id="sign-up-password" name="credentials[password]" placeholder="Password">
+              <input type="text" id="sign-up-password-confirmation" name="credentials[password_confirmation]" placeholder="Password Confirmation">
+              <input type="submit" name="submit" value="Sign up!">
+            </fieldset>
+          </form>
+          <br>
+          <!-- Sign In -->
+          <form id="sign-in">
+            <fieldset>
+              <legend>Users Please Sign In</legend>
+              <input type="text" id="sign-in-email" name="credentials[email]" placeholder="Email">
+              <input type="text" id="sign-in-password" name="credentials[password]" placeholder="Password">
+              <input type="submit" name="submit" value="Sign In!">
+            </fieldset>
+          </form>
+          <br>
+          <!-- Change Pw -->
+          <form id="change-password">
+            <fieldset>
+              <legend>Change Password!</legend>
+              <input type="text" name="passwords[old]" placeholder="Old Password">
+              <input type="text" name="passwords[new]" placeholder="New Password">
+              <input type="submit" name="submit" value="Change Password!">
+            </fieldset>
+          </form>
+          <br>
+          <!-- Sign Out -->
+          <form id="sign-out">
+            <fieldset>
+              <legend>Sign Out!</legend>
+              <input type="submit" name="submit" value="Sign Out!">
+            </fieldset>
+          </form>
+          <br>
+
+    </div>
+
+    <!-- Display Client Section -->
+    <div id="main-content">
+      <h1>After</h1>
+
+      <!-- Status for Client Changes -->
+      <p id="form-message">Hi</p>
+      <!-- Create New Client -->
+      <form id="create-client">
         <fieldset>
-            <legend>Existing Agents Please Sign In</legend>
-            <input type="text" id="sign-in-email" name="credentials[email]" placeholder="Email">
-            <input type="text" id="sign-in-password" name="credentials[password]" placeholder="Password">
-            <input type="submit" name="submit" value="Sign In!">
+          <legend>Create New Client</legend>
+          <input type="text" id="client-first" name="client[first_name]" placeholder="First Name">
+          <input type="text" id="client-last" name="client[last_name]" placeholder="Last Name">
+          <input type="text" id="client-email" name="client[email]" placeholder="Picture">
+          <input type="submit" name="submit" value="Create">
         </fieldset>
-        </form>
+      </form>
       <br>
-      </nav>
-
-
-        <form id="change-password">
+      <form id="update-client">
         <fieldset>
-            <legend>Change Password!</legend>
-            <input type="text" name="passwords[old]" placeholder="Old Password">
-            <input type="text" name="passwords[new]" placeholder="New Password">
-            <input type="submit" name="submit" value="Change Password!">
+          <legend>Update Client Information</legend>
+          <input type="text" id="client-id" name="client[id]" placeholder="ID">
+          <input type="text" id="update-client-last" name="client[last_name]" placeholder="Last Name">
+          <input type="text" id="update-client-first" name="client[first_name]" placeholder="First Name">
+          <input type="text" id="update-client-email" name="client[email]" placeholder="Picture">
+          <input type="submit" name="submit" value="Update">
         </fieldset>
-        </form>
-
-        <form id="sign-out">
+      </form>
+      <br>
+      <form id="delete-client1">
         <fieldset>
-            <legend>Sign Out!</legend>
-            <input type="submit" name="submit" value="Sign Out!">
+          <legend>Delete Client Information</legend>
+          <input type="text" id="delete-client-email" name="client[id]" placeholder="Delete">
+          <input type="submit" name="submit" value="Delete">
         </fieldset>
-          </form>
+      </form>
       <br>
+      <form id="show-client">
+        <fieldset>
+          <legend>Show Client List</legend>
+          <button id="getClientsButton" class="btn btn-default">Get Clients List</button>
+          <button id="clearClientsButton" class="btn btn-default">Clear List</button>
+          <div id="content" class="content"></div>
+        </fieldset>
+      </form>
       <br>
-      <section>
-          <h1>After </h1>
-          <p id="form-message">Hi</p>
-          <form id="create-client">
-            <fieldset>
-              <legend>Create New Client</legend>
-              <input type="text" id="client-first" name="client[first_name]" placeholder="First Name">
-              <input type="text" id="client-last" name="client[last_name]" placeholder="Last Name">
-              <input type="text" id="client-email" name="client[email]" placeholder="Picture">
-              <input type="submit" name="submit" value="Create">
-            </fieldset>
-          </form>
-          <br>
-          <br>
+      <div id="clientdata"></div>
+    </div>
+    <!-- Footer -->
+    <div id="footer">2017
+      <br>
+    </div>
 
-          <form id="update-client">
-            <fieldset>
-              <legend>Update Client Information</legend>
-              <input type="text" id="client-id" name="client[id]" placeholder="ID">
-              <input type="text" id="update-client-last" name="client[last_name]" placeholder="Last Name">
-              <input type="text" id="update-client-first" name="client[first_name]" placeholder="First Name">
-              <input type="text" id="update-client-email" name="client[email]" placeholder="Picture">
-              <input type="submit" name="submit" value="Update">
-            </fieldset>
-          </form>
-          <br>
-          <br>
-          <form id="delete-client1">
-            <fieldset>
-              <legend>Delete Client Information</legend>
-              <input type="text" id="delete-client-email" name="client[id]" placeholder="Delete">
-              <input type="submit" name="submit" value="Delete">
-            </fieldset>
-          </form>
-          <br>
-          <br>
-          <form id="show-client">
-            <fieldset>
-              <legend>Show Client List</legend>
-              <button id="getClientsButton" class="btn btn-default">Get Clients List</button>
-              <button id="clearClientsButton" class="btn btn-default">Clear List</button>
-              <div id="content" class="content"></div>
-            </fieldset>
-          </form>
-          <br>
-          <br>
-      </section>
-<div id="clientdata"></div>
+  </div>
 
-      <br>
-      <br>
-      <br>
-    </body>
+</body>
+
 </html>

@@ -1,19 +1,10 @@
 {{#each clients as |client|}}
 <br>
-<!-- Client ID: {{client.id}}
-<br> -->
+<br>
 
-<h3>Full Name: {{client.first_name}} {{client.last_name}}</h3>
-<br>
-<h4>Pic: <img src="{{client.email}}" width="180" height="250"></h4>
-<br>
-<button class="delete" name="button" data-id="{{client.id}}">Delete</button>
-<br>
+<h3>Client Profile:</h3>
+<h4>Full Name: {{client.first_name}} {{client.last_name}}</h4>
+Client ID: {{client.id}}
+<img src="{{client.email}}" width="180" height="250">
+<button class="delete" name="button" data-id="{{client.id}}">Delete Client</button>
 {{/each}}
-
-
-<!-- {{#if client.name}}
-{{client.name}}
-{{else}}
-No name
-{{/if}} -->

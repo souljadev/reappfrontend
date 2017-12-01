@@ -1,2 +1,96 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+// $boxcolor0: #ff0; //yellow
+// $boxcolor1: #0f0; //green
+// $boxcolor2: #00b6ff;
+// $boxcolor3: #2700ff;
+// $boxcolor4: #00ffe4;
+// $gray: #00ffe4;
+// $white: #fff;
+// $boxcolor5: #ff6100;
+// $boxcolor6: #45222e;
+// $boxcolor7: #ffc100;
+// $boxcolor8: #c900ff;
+// $font-color: #4e4e4e;
+// $background-color: #040404;
+// $backgroundimg: url('https://ak2.picdn.net/shutterstock/videos/8434522/thumb/1.jpg');
+//
+// body {
+//   background-color: $background-color;
+//   font-size: 18px;
+//   margin: 0 auto;
+//   padding: 0;
+//   width: 800px;
+// 	}
+
+#container {
+  margin: 20px auto;
+  width: 1000px;
+  }
+
+#footer {
+  clear: both;
+  text-align: center;
+  }
+
+#header {
+  margin: 20px auto;
+  text-align: center;
+  }
+
+#main-content {
+  float: right;
+  width: 640px;
+  }
+
+#sidebar {
+  float: left;
+  width: 320px;
+  }
+
+
+// header {
+//   text-align: center;
+//   }
+//
+// td {
+//   width: 33.333%;
+// }
+//
+// nav {
+//   background-color: $boxcolor0;
+//   display: inline-block;
+//   font-size: 14px;
+//   padding: 2%;
+//   text-align: center;
+//   width: 95%;
+// }
+//
+// h1 {
+//   color: $boxcolor2;
+//   font-weight: 10;
+// }
+//
+// legend {
+//   color: $white;
+//   font-weight: 10;
+// }
+//
+// #message {
+//   color: $boxcolor5;
+// }
+//
+//
+//
+// #change-password {
+//   background-color: $boxcolor6;
+// }
+//
+// #sign-out {
+//   background-color: $boxcolor6;
+// }
+//
+// table {
+//   width: 95%;
+// }

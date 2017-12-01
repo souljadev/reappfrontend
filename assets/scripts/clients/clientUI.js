@@ -3,28 +3,26 @@ const store = require('../store')
 const clientAPI = require('./clientAPI')
 const showClientsTemplate = require('../templates/showClientHB.handlebars')
 
-// create Client Success
+// create Client Success, reset show client
 const onCreateSuccess = function (data) {
-  // store.client = data.client
-  // store.client.id = data.client.id
-  console.log(data.client.id)
-  console.log(data.client)
   $('#form-message').text('Created Client')
+  $('#getClientsButton').click()
 }
 //  create Fail
 const onCreateFailure = function () {
   $('#form-message').text('Error on sign up')
 }
-// Update Client Succesfully
+// Update Client Succesfully, reset show client
 const onUpdateClientSuccess = function (data) {
   console.log(data)
   $('#form-message').text('Updated Client Succesfully')
+  $('#getClientsButton').click()
 }
 // Update Fail
 const onUpdateClientFailure = function () {
   $('#form-message').text('Error on Update')
 }
-// show Client Successful
+// show Client Successful, reset show client
 const showClientSuccess = function (data) {
   console.log(data)
   $('#form-message').text('show succesfully')
@@ -34,9 +32,7 @@ const showClientFailure = function () {
   $('#form-message').text('Not showing up')
 }
 
-// ALL WORKING CODE ABOVE
-
-// CODE FOR HANDLEBAR - CONFIRM IF WORKING THEN UPDATE MSG
+// CODE FOR HANDLEBAR
 const getClientsSuccess = (data) => {
   const showClientsHtml = showClientsTemplate({ clients: data.clients })
   $('.content').append(showClientsHtml)
@@ -53,6 +49,7 @@ const getClientsSuccess = (data) => {
 // delete Successful then refresh client list
 const deleteSuccess = function (data) {
   $('#form-message').text('delete succesfully')
+  $('#getClientsButton').click()
 }
 // delete fail
 const deleteFailure = function () {
