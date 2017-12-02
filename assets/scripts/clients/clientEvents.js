@@ -47,7 +47,6 @@ const showClient = function (event) {
 const deleteClient = function (event) {
   const data = getFormFields(this)
   event.preventDefault()
-  console.log("We're about to delete client with id: ", data.client.id)
   clientAPI.deleteClient(data)
     .then(clientUI.deleteSuccess)
     .catch(clientUI.deleteFailure)

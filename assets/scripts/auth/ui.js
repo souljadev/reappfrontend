@@ -37,6 +37,15 @@ const changePasswordFailure = function () {
 }
 
 const signOutSuccess = function () {
+  $('section').hide(500)
+  $('nav').hide(500)
+  $('header').addClass('centered')
+  // trasition to hide sign up/in
+  $('#sign-up-sec').show(500)
+  $('#sign-in-sec').show(500)
+  // trasition to show changePW and Log out
+  $('#chngpw').hide(500)
+  $('#so-sec').hide(500)
   $('#message').text('Goodbye')
 }
 

@@ -14,7 +14,6 @@ const onCreateFailure = function () {
 }
 // Update Client Succesfully, reset show client
 const onUpdateClientSuccess = function (data) {
-  console.log(data)
   $('#form-message').text('Updated Client Succesfully')
   $('#getClientsButton').click()
 }
@@ -24,7 +23,6 @@ const onUpdateClientFailure = function () {
 }
 // show Client Successful, reset show client
 const showClientSuccess = function (data) {
-  console.log(data)
   $('#form-message').text('show succesfully')
 }
 // show Client Fail
