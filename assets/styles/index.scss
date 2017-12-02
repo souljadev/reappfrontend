@@ -36,6 +36,14 @@ header {
   background-color: $whitehead;
   }
 
+.centered {
+    position: fixed;
+    width: 1000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 #sign-up-sec {
   width: 30%;
   color: $black;

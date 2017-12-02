@@ -2,7 +2,7 @@
 const store = require('../store')
 
 const signUpSuccess = function (data) {
-  $('#message').text('Signed up succesfully')
+  $('#message').text('Signed up succesfully, Please Sign In')
 }
 
 const signUpFailure = function () {
@@ -11,6 +11,9 @@ const signUpFailure = function () {
 
 const signInSuccess = function (data) {
   store.user = data.user
+  $('section').show(800)
+  $('nav').show(500)
+  $('header').removeClass('centered')
   $('#message').text('Signed in succesfully')
 }
 

@@ -3,6 +3,15 @@ const getFormFields = require(`../../../lib/get-form-fields`)
 
 const clientAPI = require('./clientAPI')
 const clientUI = require('./clientUI')
+
+// hide nav and show client on load
+// hide section
+$(document).ready(function () {
+  $('section').hide()
+  $('nav').hide()
+  $('footer').hide()
+})
+
 // create client
 const onCreate = function (event) {
   const data = getFormFields(this)
