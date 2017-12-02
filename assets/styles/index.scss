@@ -44,17 +44,34 @@ header {
     transform: translate(-50%, -50%);
   }
 
+.auth-panel {
+  color: $black;
+}
+
 #sign-up-sec {
   width: 30%;
-  color: $black;
   float: left;
 }
 
 #sign-in-sec {
   width: 32%;
-  color: $black;
   float: left;
   padding-top: 20px;
+}
+
+#so-sec {
+  width: 20%;
+  float: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+#chngpw {
+  width: 35%;
+  float: left;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
 }
 
 #right-status {

@@ -25,35 +25,58 @@
       <div id="logo">
           <img src="https://i.imgur.com/IR3p3Y1.jpg" alt="" class="imagez">
       </div>
+      <!-- sign up/in/out/chgpw/ -->
+      <div class="auth-panel">
+          <!-- Sign up form -->
+          <div id="sign-up-sec">
+              <form id="sign-up">
+                <fieldset>
+                  <h4>New User Sign Up</h4>
+                  <input type="text" id="sign-up-email" name="credentials[email]" placeholder="Email">
+                  <br>
+                  <input type="text" id="sign-up-password" name="credentials[password]" placeholder="Password">
+                  <br>
+                  <input type="text" id="sign-up-password-confirmation" name="credentials[password_confirmation]" placeholder="Password Confirmation">
+                  <br>
+                  <input type="submit" name="submit" value="Sign up!">
+                </fieldset>
+              </form>
+          </div>
+          <!-- Sign In -->
+          <div id="sign-in-sec">
+            <form id="sign-in">
+              <fieldset>
+                <legend>Users Please Sign In</legend>
+                <input type="text" id="sign-in-email" name="credentials[email]" placeholder="Email">
+                <input type="text" id="sign-in-password" name="credentials[password]" placeholder="Password">
+                <input type="submit" name="submit" value="Sign In!">
+              </fieldset>
+            </form>
+          </div>
+          <!-- Change Pw -->
+          <div id="chngpw">
+              <form id="change-password">
+                <fieldset>
+                  <legend>Change Password!</legend>
+                  <input type="text" name="passwords[old]" placeholder="Old Password">
+                  <input type="text" name="passwords[new]" placeholder="New Password">
+                  <input type="submit" name="submit" value="Change Password!">
+                </fieldset>
+              </form>
+          </div>
+          <!-- Sign Out -->
+          <div id="so-sec">
+              <form id="sign-out">
+                <fieldset>
+                  <legend>Sign Out!</legend>
+                  <input type="submit" name="submit" value="Sign Out!">
+                </fieldset>
+              </form>
+          </div>
+      </div>
       <!-- Sign up/in Status Bar -->
       <div id="right-status">
-      <p id="message"></p>
-      </div>
-      <!-- Sign up form -->
-      <div id="sign-up-sec">
-        <form id="sign-up">
-          <fieldset>
-            <h4>New User Sign Up</h4>
-            <input type="text" id="sign-up-email" name="credentials[email]" placeholder="Email">
-            <br>
-            <input type="text" id="sign-up-password" name="credentials[password]" placeholder="Password">
-            <br>
-            <input type="text" id="sign-up-password-confirmation" name="credentials[password_confirmation]" placeholder="Password Confirmation">
-            <br>
-            <input type="submit" name="submit" value="Sign up!">
-          </fieldset>
-        </form>
-      </div>
-      <!-- Sign In -->
-      <div id="sign-in-sec">
-        <form id="sign-in">
-          <fieldset>
-          <legend>Users Please Sign In</legend>
-          <input type="text" id="sign-in-email" name="credentials[email]" placeholder="Email">
-          <input type="text" id="sign-in-password" name="credentials[password]" placeholder="Password">
-          <input type="submit" name="submit" value="Sign In!">
-        </fieldset>
-        </form>
+        <p id="message"></p>
       </div>
 
   </header>
@@ -87,7 +110,7 @@
               <input type="submit" name="submit" value="Change Password!">
             </fieldset>
           </form>
-          <br>
+
           <!-- Sign Out -->
           <form id="sign-out">
             <fieldset>
@@ -95,7 +118,7 @@
               <input type="submit" name="submit" value="Sign Out!">
             </fieldset>
           </form>
-          <br>
+
     </div>
   </nav>
 

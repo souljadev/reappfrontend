@@ -10,6 +10,8 @@ $(document).ready(function () {
   $('section').hide()
   $('nav').hide()
   $('footer').hide()
+  $('#chngpw').hide()
+  $('#so-sec').hide()
 })
 
 // create client

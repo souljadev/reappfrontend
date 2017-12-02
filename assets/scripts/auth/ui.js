@@ -11,9 +11,16 @@ const signUpFailure = function () {
 
 const signInSuccess = function (data) {
   store.user = data.user
+  // transition to show sections on sign up
   $('section').show(800)
   $('nav').show(500)
   $('header').removeClass('centered')
+  // trasition to hide sign up/in
+  $('#sign-up-sec').hide(800)
+  $('#sign-in-sec').hide(800)
+  // trasition to show changePW and Log out
+  $('#chngpw').show(800)
+  $('#so-sec').show(800)
   $('#message').text('Signed in succesfully')
 }
 
