@@ -2,8 +2,15 @@
     {{#each clients as |client|}}
         <div class="chld">
           <div class="del-butts">
-            <button class="delete" name="button" data-id="{{client.id}}" class="del-forreal" id="deletec">Delete Client</button>
+            <form>
+              <fieldset>
+                <input type="submit" class="delete" name="submit" data-id="{{client.id}}" id="deletec" value="Delete Client">
+              </fieldset>
+            <form>
           </div>
+
+
+
           <div class="handlbiz">
             <img src="{{client.email}}" width="180" height="250" class="handleimgz">
             <div class="profile">

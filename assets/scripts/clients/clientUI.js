@@ -37,6 +37,7 @@ const getClientsSuccess = (data) => {
   // delete client
   const deleteCurrentClient = function (data) {
     store.id = $(event.target).data('id')
+    event.preventDefault()
     clientAPI.deleteCUClient(data)
       .then(deleteSuccess)
       .catch(deleteFailure)
@@ -47,7 +48,6 @@ const getClientsSuccess = (data) => {
 // delete Successful then refresh client list
 const deleteSuccess = function (data) {
   $('#form-message').text('delete succesfully')
-  event.preventDefault()
   $('#getClientsButton').click()
 }
 // delete fail

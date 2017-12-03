@@ -24,16 +24,6 @@ const updateClient = function (data) {
   })
 }
 
-const deleteClient = function (data) {
-  return $.ajax({
-    url: config.apiOrigin + '/clients/' + data.client.id,
-    method: 'DELETE',
-    headers: {
-      Authorization: 'Token token=' + store.user.token
-    },
-    data
-  })
-}
 // handlebar function
 const showClients = function (data) {
   // data = JSON.stringify(data)
@@ -63,6 +53,5 @@ module.exports = {
   showClients,
   updateClient,
   createClient,
-  deleteClient,
   deleteCUClient
 }

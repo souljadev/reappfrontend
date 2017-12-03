@@ -44,13 +44,13 @@ const showClient = function (event) {
   return data
 }
 // delete client
-const deleteClient = function (event) {
-  const data = getFormFields(this)
-  event.preventDefault()
-  clientAPI.deleteClient(data)
-    .then(clientUI.deleteSuccess)
-    .catch(clientUI.deleteFailure)
-}
+// const deleteClient = function (event) {
+//   // const data = getFormFields(this)
+//   event.preventDefault()
+//   clientAPI.deleteCUClient()
+//     .then(clientUI.deleteSuccess)
+//     .catch(clientUI.deleteFailure)
+// }
 
 // ALL WORKING CODE ABOVE
 
@@ -84,7 +84,7 @@ const addHandlers = function () {
   $('#show-client').on('submit', showClient)
   $('#update-client').on('submit', onUpdateClient)
   $('#create-client').on('submit', onCreate)
-  $('#deletec').on('click', deleteClient)
+  // $('#deletec').on('submit', deleteClient)
   $('#getClientsButton').on('click', onGetClients)
   $('#getNamesButton').on('click', onGetNames)
   $('#clearClientsButton').on('click', onClearClients)
