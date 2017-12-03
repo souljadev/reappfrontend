@@ -38,6 +38,8 @@ body {
 
 .chld {
   height: 270px;
+  overflow: hidden;
+  padding: 5px;
   width: 700px;
 }
 
@@ -55,6 +57,10 @@ body {
   padding-right: 10px;
   padding-top: 20px;
   width: 35%;
+  }
+
+.clearfix {
+  overflow: hidden;
   }
 
 .clnav {
@@ -78,6 +84,7 @@ footer {
   font-style: normal;
   font-variant: normal;
   font-weight: 300;
+  overflow: hidden;
   text-align: left;
   }
 
@@ -86,7 +93,6 @@ footer {
   max-height: 350px;
   max-width: 250px;
   padding-left: 40px;
-  padding-top: 10px;
 }
 
 header {
@@ -135,7 +141,7 @@ nav > div {
 .profile {
   float: left;
   padding-left: 120px;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 #right-status {
