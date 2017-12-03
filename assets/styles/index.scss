@@ -16,140 +16,50 @@ $boxcolor8: #c900ff;
 $font-color: #4e4e4e;
 $background-color: #040404;
 
-body {
-  background-color: $background-color;
-  width: 1000px;
-  margin: 20px auto;
-	}
-
-header {
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 150px;
-  background-color: $whitehead;
-  }
-
-.centered {
-    position: fixed;
-    width: 1000px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
 .auth-panel > div {
   color: $black;
   float: left;
   width: 30%;
-}
-
-.clnav {
-  color: $white;
-}
-
-#so-sec {
-  width: 20%;
-  float: left;
-  padding-left: 20px;
-  padding-top: 20px;
-}
-
-#chngpw {
-  width: 35%;
-  float: left;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 10px;
-}
-
-#right-status {
-  width: 16%;
-  float: right;
-  padding-top: 50px;
-  padding-right: 15px;
-}
-
-#message {
-  color: red;
-  font-family: 'Futura';
-  font-weight: 100;
-}
-
-#main-content {
-  float: right;
-  width: 770px;
-  background-color: $blktrans;
-  color: white;
-  margin: 5px auto;
-  padding: 5px auto;
   }
 
-nav {
-  float: left;
-  width: 210px;
-  background-color: $blktrans;
-  margin: 5px auto;
-  padding: 5px auto;
+body {
+  background-color: $background-color;
+  margin: 20px auto;
+  width: 1000px;
+	}
+
+.centered {
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
   }
-
-nav > div {
-  padding-top: 20px;
-  text-align: center;
-}
-
-.update-cl {
-  padding-top: 60px;
-  padding-bottom: 50px;
-}
-
-.sclist {
-  padding-top: 5px;
-  color: $white;
-}
-
-span {
-  font-size: 12px;
-  font-style: italic;
-  font-family:'Source Sans Pro', sans-serif;
-  color: $red;
-}
-
-.handlbiz {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-	font-size: 30px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 300;
-  height: 270px;
-  width: 700px;
-  text-align: left;
-}
-
-.handleimgz {
-  padding-top: 20px;
-  padding-left: 50px;
-  float: left;
-}
-
-.profile {
-  float: left;
-  padding-top: 50px;
-  padding-left: 160px;
-}
 
 .chld:nth-child(2n+1) {
-    background: $blue;
-}
+  background: $blue;
+  }
 
 .chld:nth-child(2n+2) {
   background: $green;
-}
+  }
+
+#chngpw {
+  float: left;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 20px;
+  width: 35%;
+  }
+
+.clnav {
+  color: $white;
+  }
 
 .delete {
-  float: right;
   color: $red;
-}
+  float: right;
+  }
 
 footer {
   clear: both;
@@ -157,23 +67,113 @@ footer {
   text-align: center;
   }
 
-.imagez {
-  max-height: 150px;
+.handlbiz {
+  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  height: 270px;
+  text-align: left;
+  width: 700px;
+  }
+
+.handleimgz {
   float: left;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+header {
+  align-items: center;
+  background-color: $whitehead;
+  height: 150px;
+  text-align: center;
+  width: 100%;
+  }
+
+.imagez {
   border-top: 2px;
-  opacity: 0.8;
+  float: left;
+  max-height: 150px;
+  opacity: .8;
+  }
+
+#main-content {
+  background-color: $blktrans;
+  color: $white;
+  float: right;
+  margin: 5px auto;
+  padding: 5px auto;
+  width: 770px;
+  }
+
+#message {
+  color: $red;
+  font-family: 'Futura';
+  font-weight: 100;
+  }
+
+nav {
+  background-color: $blktrans;
+  float: left;
+  margin: 5px auto;
+  padding: 5px auto;
+  width: 210px;
+  }
+
+nav > div {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.profile {
+  float: left;
+  padding-left: 160px;
+  padding-top: 50px;
+}
+
+#right-status {
+  float: right;
+  padding-right: 15px;
+  padding-top: 50px;
+  width: 16%;
+  }
+
+.sclist {
+  color: $white;
+  padding-top: 5px;
+}
+
+#so-sec {
+  float: left;
+  padding-left: 20px;
+  padding-top: 20px;
+  width: 20%;
+  }
+
+span {
+  color: $red;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.update-cl {
+  padding-bottom: 50px;
+  padding-top: 60px;
 }
 
 video {
-  min-height: 100%;
-  min-width: 100%;
-  width: auto;
-  height: auto;
   background-color: $black;
   background-size: cover;
+  height: auto;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
   position: fixed;
   top: 50%;
-  left: 50%;
-  z-index: -100;
   transform: translate(-50%, -50%);
+  width: auto;
+  z-index: -100;
 }
