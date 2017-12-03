@@ -3,14 +3,13 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 $blktrans: rgba(0, 0, 0, .4);
 $whitehead: rgba(255, 255, 255, .6);
-$boxcolor2: #00b6ff;
-$boxcolor3: #2700ff;
-$boxcolor4: #00ffe4;
+$red: #ff6666;
+$blue: rgba(51, 133, 255, .6);
 $litepurp: #e066ff;
 $gray: #00ffe4;
 $white: #fff;
 $black: #000;
-$boxcolor5: #ff6100;
+$green: rgba(102, 255, 153, .6);
 $boxcolor6: #45222e;
 $boxcolor7: #ffc100;
 $boxcolor8: #c900ff;
@@ -73,6 +72,8 @@ header {
 
 #message {
   color: red;
+  font-family: 'Futura';
+  font-weight: 100;
 }
 
 #main-content {
@@ -102,11 +103,16 @@ nav > div {
   padding-bottom: 50px;
 }
 
+.sclist {
+  padding-top: 5px;
+  color: $white;
+}
 
 span {
-  font-size: 10px;
+  font-size: 12px;
   font-style: italic;
   font-family:'Source Sans Pro', sans-serif;
+  color: $red;
 }
 
 .handlbiz {
@@ -133,15 +139,16 @@ span {
 }
 
 .chld:nth-child(2n+1) {
-    background: $boxcolor5;
+    background: $blue;
 }
 
 .chld:nth-child(2n+2) {
-    background: $boxcolor6;
+  background: $green;
 }
 
 .delete {
   float: right;
+  color: $red;
 }
 
 footer {
