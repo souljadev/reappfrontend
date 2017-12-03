@@ -36,6 +36,11 @@ body {
   width: 1000px;
   }
 
+.chld {
+  height: 270px;
+  width: 700px;
+}
+
 .chld:nth-child(2n+1) {
   background: $blue;
   }
@@ -73,15 +78,15 @@ footer {
   font-style: normal;
   font-variant: normal;
   font-weight: 300;
-  height: 270px;
   text-align: left;
-  width: 700px;
   }
 
 .handleimgz {
   float: left;
-  padding-left: 50px;
-  padding-top: 20px;
+  max-height: 350px;
+  max-width: 250px;
+  padding-left: 40px;
+  padding-top: 10px;
 }
 
 header {
@@ -129,8 +134,8 @@ nav > div {
 
 .profile {
   float: left;
-  padding-left: 160px;
-  padding-top: 50px;
+  padding-left: 120px;
+  padding-top: 10px;
 }
 
 #right-status {
