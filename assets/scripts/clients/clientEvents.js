@@ -84,7 +84,7 @@ const addHandlers = function () {
   $('#show-client').on('submit', showClient)
   $('#update-client').on('submit', onUpdateClient)
   $('#create-client').on('submit', onCreate)
-  $('#delete-client1').on('submit', deleteClient)
+  $('#deletec').on('click', deleteClient)
   $('#getClientsButton').on('click', onGetClients)
   $('#getNamesButton').on('click', onGetNames)
   $('#clearClientsButton').on('click', onClearClients)

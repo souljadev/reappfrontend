@@ -47,6 +47,7 @@ const getClientsSuccess = (data) => {
 // delete Successful then refresh client list
 const deleteSuccess = function (data) {
   $('#form-message').text('delete succesfully')
+  event.preventDefault()
   $('#getClientsButton').click()
 }
 // delete fail

@@ -45,6 +45,10 @@ header {
   width: 30%;
 }
 
+.clnav {
+  color: $white;
+}
+
 #so-sec {
   width: 20%;
   float: left;
@@ -82,8 +86,8 @@ header {
 
 nav {
   float: left;
-  width: 190px;
-  background-color: $boxcolor5;
+  width: 210px;
+  background-color: $blktrans;
   margin: 5px auto;
   padding: 5px auto;
   }
@@ -100,10 +104,45 @@ nav > div {
 
 
 span {
-  font-size: 9px;
+  font-size: 10px;
   font-style: italic;
+  font-family:'Source Sans Pro', sans-serif;
 }
 
+.handlbiz {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+  height: 270px;
+  width: 700px;
+  text-align: left;
+}
+
+.handleimgz {
+  padding-top: 20px;
+  padding-left: 50px;
+  float: left;
+}
+
+.profile {
+  float: left;
+  padding-top: 50px;
+  padding-left: 160px;
+}
+
+.chld:nth-child(2n+1) {
+    background: $boxcolor5;
+}
+
+.chld:nth-child(2n+2) {
+    background: $boxcolor6;
+}
+
+.del-butts {
+  float: right;
+}
 
 footer {
   clear: both;
@@ -112,7 +151,7 @@ footer {
   }
 
 .imagez {
-  max-width: 200px;
+  max-height: 150px;
   float: left;
   border-top: 2px;
   opacity: 0.8;
@@ -131,49 +170,3 @@ video {
   z-index: -100;
   transform: translate(-50%, -50%);
 }
-
-
-// header {
-//   text-align: center;
-//   }
-//
-// td {
-//   width: 33.333%;
-// }
-//
-// nav {
-//   background-color: $boxcolor0;
-//   display: inline-block;
-//   font-size: 14px;
-//   padding: 2%;
-//   text-align: center;
-//   width: 95%;
-// }
-//
-// h1 {
-//   color: $boxcolor2;
-//   font-weight: 10;
-// }
-//
-// legend {
-//   color: $white;
-//   font-weight: 10;
-// }
-//
-// #message {
-//   color: $boxcolor5;
-// }
-//
-//
-//
-// #change-password {
-//   background-color: $boxcolor6;
-// }
-//
-// #sign-out {
-//   background-color: $boxcolor6;
-// }
-//
-// table {
-//   width: 95%;
-// }

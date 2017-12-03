@@ -1,10 +1,18 @@
-{{#each clients as |client|}}
-<br>
-<br>
-
-<h3>Client Profile:</h3>
-<h4>Full Name: {{client.first_name}} {{client.last_name}}</h4>
-Client ID: {{client.id}}
-<img src="{{client.email}}" width="180" height="250">
-<button class="delete" name="button" data-id="{{client.id}}">Delete Client</button>
-{{/each}}
+<div class="handlewrapper">
+    {{#each clients as |client|}}
+        <div class="chld">
+          <div class="del-butts">
+            <button class="delete" name="button" data-id="{{client.id}}" class="del-forreal" id="deletec">Delete Client</button>
+          </div>
+          <div class="handlbiz">
+            <img src="{{client.email}}" width="180" height="250" class="handleimgz">
+            <div class="profile">
+              First Name: {{client.first_name}} <br>
+              Last Name: {{client.last_name}} <br>
+              Client ID: {{client.id}}<br>
+            </div>
+          </div>
+          <br>
+        </div>
+        {{/each}}
+</div>

@@ -16,7 +16,7 @@
 
 <body>
   <video autoplay loop>
-    <!-- <source src="https://pixabay.com/en/videos/download/video-3249_small.mp4" type="video/mp4" class="videoz" /> -->
+    <source src="https://pixabay.com/en/videos/download/video-3249_small.mp4" type="video/mp4" class="videoz" />
   </video>
 
 
@@ -88,14 +88,14 @@
 <!-- Left Navigation Bar - change pw/client  -->
   <nav>
         <!-- Status Bar -->
-        <p id="namemsg">Welcome to RE App</p>
+        <p id="namemsg"  class="clnav">Welcome to RE App</p>
 
           <div class="clientform">
               <div id="create-cl">
                 <!-- Create New Client -->
                 <form id="create-client">
                   <fieldset>
-                    <legend>Create New Client</legend>
+                    <legend class="clnav">Create New Client</legend>
                     <input type="text" id="client-first" name="client[first_name]" placeholder="First Name">
                     <br>
                     <input type="text" id="client-last" name="client[last_name]" placeholder="Last Name">
@@ -111,7 +111,7 @@
               <div class="update-cl">
                 <form id="update-client">
                   <fieldset>
-                    <legend>Update Client Information</legend>
+                    <legend  class="clnav">Update Client Information</legend>
                     <input type="text" id="client-id" name="client[id]" placeholder="ID">
                     <br>
                     <input type="text" id="update-client-first" name="client[first_name]" placeholder="First Name">
@@ -140,7 +140,7 @@
       <br>
 
 
-      <form id="show-client">
+      <form>
         <fieldset>
           <legend>Show Client List</legend>
           <button id="getClientsButton" class="btn btn-default">Get Clients List</button>
