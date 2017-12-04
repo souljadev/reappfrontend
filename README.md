@@ -11,8 +11,7 @@ Link to [ReApp](https://souljadev.github.io/reappfrontend/)
 
 ## GitHub/Heroku Links
 
-Link to [Front End of App](https://github.com/souljadev/reappfrontend/)
-Link to [Back End of App](https://github.com/souljadev/reapp/)
+Link to [Back End of App](https://github.com/souljadev/reapp/) <br>
 Link to [Heroku API](https://bmcrmapp.herokuapp.com/)
 
 ## ERD
@@ -30,20 +29,17 @@ Link to [ERD Overview](https://www.dropbox.com/s/ar3jsbqqn3jkc5n/erdfin.pdf/)
 ## Wire Frames
 
 Preliminary Wire Frame
-<img src="https://www.dropbox.com/s/kz87x8weip6zkjw/wireframe.jpg" title="Wire Frame"/>
+<img src="https://i.imgur.com/vC0877W.jpg" title="Wire Frame"/>
 
 
 ## Technologies Used
 
 * HTML
 * CSS3
+* SCSS
 * jQUERY
 * JavaScript
 * GIT/GITHUB
-* SASS
-* RUBY ON RAILS
-* HEROKU
-* SQL
 
 ## Overview & Planning
 
