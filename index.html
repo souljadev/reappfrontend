@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <!-- <link rel="stylesheet" type="text/css" href="assets/styles/index.scss"/> -->
+      <title>Reapp</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+
+
+<body>
+  <video autoplay loop>
+    <source src="https://s3.amazonaws.com/bmfhold/shanghai.mp4" type="video/mp4" class="videoz" />
+  </video>
+
+
+  <!-- LOGO HEADER -->
+  <header class="centered">
+      <div id="logo">
+          <img src="https://i.imgur.com/IR3p3Y1.jpg" alt="" class="imagez">
+      </div>
+      <!-- sign up/in/out/chgpw/ -->
+      <div class="auth-panel">
+          <!-- Sign up form -->
+          <div id="sign-up-sec">
+              <form id="sign-up">
+                <fieldset>
+                  <h4>New User Sign Up</h4>
+                  <input type="text" id="sign-up-email" name="credentials[email]" placeholder="Email">
+                  <br>
+                  <input type="text" id="sign-up-password" name="credentials[password]" placeholder="Password">
+                  <br>
+                  <input type="text" id="sign-up-password-confirmation" name="credentials[password_confirmation]" placeholder="Password Confirmation">
+                  <br>
+                  <input type="submit" name="submit" value="Sign up!">
+                </fieldset>
+              </form>
+          </div>
+          <!-- Sign In -->
+          <div id="sign-in-sec">
+            <form id="sign-in">
+              <fieldset>
+                <h4>Users Please Sign In</h4>
+                <input type="text" id="sign-in-email" name="credentials[email]" placeholder="Email">
+                <br>
+                <input type="text" id="sign-in-password" name="credentials[password]" placeholder="Password">
+                <br>
+                <br>
+                <input type="submit" name="submit" value="Sign In!">
+              </fieldset>
+            </form>
+          </div>
+          <!-- Change Pw -->
+          <div id="chngpw">
+              <form id="change-password">
+                <fieldset>
+                  <legend>Change Password!</legend>
+                  <input type="text" name="passwords[old]" placeholder="Old Password">
+                  <input type="text" name="passwords[new]" placeholder="New Password">
+                  <input type="submit" name="submit" value="Change Password!">
+                </fieldset>
+              </form>
+          </div>
+          <!-- Sign Out -->
+          <div id="so-sec">
+              <form id="sign-out">
+                <fieldset>
+                  <legend>Sign Out!</legend>
+                  <input type="submit" name="submit" value="Sign Out!">
+                </fieldset>
+              </form>
+          </div>
+      </div>
+      <!-- Sign up/in Status Bar -->
+      <div id="right-status">
+        <p id="message"></p>
+      </div>
+
+  </header>
+
+
+<!-- Left Navigation Bar - change pw/client  -->
+  <nav>
+        <!-- Status Bar -->
+        <p id="namemsg"  class="clnav">Welcome to RE App</p>
+
+          <div class="clientform">
+              <div id="create-cl">
+                <!-- Create New Client -->
+                <form id="create-client">
+                  <fieldset>
+                    <legend class="clnav">Create New Client</legend>
+                    <input type="text" id="client-first" name="client[first_name]" placeholder="First Name">
+                    <br>
+                    <input type="text" id="client-last" name="client[last_name]" placeholder="Last Name">
+                    <br>
+                    <input type="text" id="client-pic" name="client[pic]" placeholder="Picture URL">
+                    <br>
+                    <span>File format .jpg .png .gif only</span>
+                    <br>
+                    <input type="submit" name="submit" value="Create">
+                  </fieldset>
+                </form>
+              </div>
+
+                <!-- Update Client -->
+              <div class="update-cl">
+                <form id="update-client">
+                  <fieldset>
+                    <legend  class="clnav">Update Client Information</legend>
+                    <input type="text" id="client-id" name="client[id]" placeholder="ID">
+                    <br>
+                    <input type="text" id="update-client-first" name="client[first_name]" placeholder="First Name">
+                    <br>
+                    <input type="text" id="update-client-last" name="client[last_name]" placeholder="Last Name">
+                    <br>
+                    <input type="text" id="update-client-pic" name="client[pic]" placeholder="Picture URL">
+                    <br>
+                    <span>File format .jpg .png .gif only</span>
+                    <br>
+                    <input type="submit" name="submit" value="Update">
+                  </fieldset>
+              </form>
+            </div>
+      </div>
+  </nav>
+
+<!-- Display Client Section -->
+  <section>
+    <div id="main-content">
+      <h1>Client Profile</h1>
+
+      <!-- Status for Client Changes -->
+      <p id="form-message"></p>
+
+      <br>
+
+
+      <form>
+        <fieldset>
+          <legend class="sclist">Show Client List</legend>
+          <button id="getClientsButton" class="btn btn-default">Get Clients List</button>
+          <button id="clearClientsButton" class="btn btn-default">Clear List</button>
+          <div id="content" class="content"></div>
+        </fieldset>
+      </form>
+      <br>
+      <div id="clientdata"></div>
+    </div>
+  </section>
+
+<!-- Footer -->
+  <footer>
+    <div id="footer">2017<br></div>
+  </footer>
+
+
+
+</body>
+
+</html>
